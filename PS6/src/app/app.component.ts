@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {WEATHER_REPORTS} from './WEATHER-MOCK';
+import { WeatherService} from './services/weather.service';
 
 @Component({
   selector: 'app-root',
@@ -8,5 +8,7 @@ import {WEATHER_REPORTS} from './WEATHER-MOCK';
 })
 export class AppComponent {
   title = 'PS6';
-  weatherReports = WEATHER_REPORTS;
+
+  constructor() {
+  }
 }
